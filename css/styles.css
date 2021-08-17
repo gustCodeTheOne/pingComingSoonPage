@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+@font-face {
+  font-family: "LibreFranklin Thin";
+  src: url("./fonts/static/LibreFranklin-Thin.ttf");
+}
+@font-face {
+  font-family: "LibreFranklin SemiBold";
+  src: url("./fonts/static/LibreFranklin-SemiBold.ttf");
+}
+@font-face {
+  font-family: "LibreFranklin Bold";
+  src: url("./fonts/static/LibreFranklin-Bold.ttf");
+}
+body {
+  background-color: #fff;
+}
+.content {
+  max-width: 1440px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+#logo {
+  height: 23px;
+  margin-top: 85px;
+  margin-bottom: 54px;
+}
+.title {
+  font-family: "LibreFranklin Thin";
+  font-size: 39px;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 27px;
+}
+.mark {
+  font-family: "LibreFranklin Bold";
+  color: hsl(209, 33%, 12%);
+}
+.desc {
+  font-family: "LibreFranklin SemiBold";
+  font-size: 19px;
+  color: hsl(209, 33%, 12%);
+  margin-bottom: 39px;
+}
+form.signUpForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: "LibreFranklin Thin";
+  justify-content: center;
+  margin-bottom: 93px;
+}
+#email {
+  width: 428px;
+  height: 54px;
+  font-size: 16px;
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 27px 27px;
+  margin-right: 12px;
+  padding-left: 31px;
+}
+#email:focus {
+  outline: none;
+}
+#notify {
+  width: 202px;
+  height: 54px;
+  font-size: 16px;
+  color: #fff;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  border-radius: 27px 27px;
+  transition: all 300ms;
+}
+#notify:hover {
+  background-color: hsl(223, 100%, 88%);
+  color: hsl(209, 33%, 12%);
+  cursor: pointer;
+}
+.message {
+  display: none;
+  font-size: 14px;
+  color: hsl(354, 100%, 66%);
+  text-align: left;
+  margin-top: 10px;
+  padding-left: 31px;
+}
+.dashboardImage {
+  width: 637px;
+  margin-bottom: 73px;
+}
+.socialMedia {
+  margin-bottom: 33px;
+}
+.icon {
+  font-size: 29px;
+  color: hsl(223, 87%, 63%);
+  margin: 0px 15px;
+  transition: all 300ms;
+}
+.icon:hover {
+  color: hsl(209, 33%, 12%);
+  cursor: pointer;
+}
+.copyright {
+  font-family: "LibreFranklin Thin";
+  font-size: 16px;
+  color: hsl(209, 33%, 12%);
+  margin-bottom: 48px;
+}
+
+@media (max-width: 735px) {
+  form.signUpForm {
+    flex-direction: column;
+  }
+  #email {
+    width: 80%;
+    margin-right: 0px;
+  }
+  .message {
+    text-align: center;
+  }
+  #notify {
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 16px;
+  }
+  .dashboardImage {
+    width: 80%;
+  }
+}
+@media (max-width: 375px) {
+  .title {
+    font-size: 25px;
+    margin-bottom: 17px;
+  }
+  .desc {
+    font-size: 13px;
+  }
+  #email {
+    width: 70%;
+    height: 44px;
+    font-size: 14px;
+  }
+  .message {
+    font-size: 12px;
+    padding-left: 0px;
+  }
+  #notify {
+    width: 79%;
+    height: 44px;
+    font-size: 14px;
+  }
+  .dashboardImage {
+    margin-bottom: 150px;
+  }
+  .icon {
+    font-size: 19px;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+}
